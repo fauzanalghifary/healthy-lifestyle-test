@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="form.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div id="main-container">
+
+
+        <div style="display: flex; justify-content:center; align-items: center; height: 100vh; width: 100%;">
+
+            <div class="first-container">
+                <h1 class="main-title">Seberapa sehat kamu?</h1>
+                <form action="">
+
+                    <div class="identitas">
+                        <label hidden="hidden" for="nama">Nama</label>
+                        <input style="width:500px" type="text" name="nama" id="nama" placeholder="nama">
+                    </div>
+
+
+                    <div class="tinggiberat">
+                        <label hidden="hidden" for="tinggi">Tinggi Badan</label>
+                        <input style="width:250px; margin-right: 10px;" type="text" name="tinggi" id="tinggi"
+                            placeholder="tinggi badan">
+
+                        <label hidden="hidden" for="berat">Berat Badan</label>
+                        <input style="width:250px" type="text" name="berat" id="berat" placeholder="berat badan">
+                    </div>
+
+                    <div>
+                        <a class="btn" href="#soal-1" id="mulai">Mulai</a>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="">
+                <img src="img/identitas.gif" style="width: 1000px;" alt="" />
+            </div>
+
+        </div>
+
+        <div class="the-container soal-1" id="soal-1">
+            <div class="col-lg-6">
+                <img src="img/olahraga.gif" style="width: 90%; padding-top: 150px;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering berolahraga <br> indoor maupun outdoor?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi1" id="tidak1" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi1" id="jarang1" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi1" id="sering1" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-1">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-2" id="soal-2">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/vitamin.gif" style="padding-top: 100px;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering mengkonsumsi vitamin <br> dan supplement kesehatan?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi2" id="tidak2" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi2" id="jarang2" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi2" id="sering2" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-2">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-3" id="soal-3">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/fruit.gif" style="width: 115%;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering mengkonsumsi <br> sayur dan buah-buahan?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi3" id="tidak3" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi3" id="jarang3" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi3" id="sering3" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-3">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-4" id="soal-4" style="background-color: #FBF9F8">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/protein.gif" alt="" style="padding-top: 272px; padding-left: 100px;" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Seberapa sering anda mengkonsumsi makanan <br> dengan kadar protein tinggi?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi4" id="tidak4" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi4" id="jarang4" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi4" id="sering4" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-4">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-5" id="soal-5" style="background-color: #FDFCFC">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/sleep.gif" alt="" style="padding-top: 50px;" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering begadang?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi5" id="tidak5" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi5" id="jarang5" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi5" id="sering5" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-5">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-6" id="soal-6">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/rsud.gif" style="padding-top: 125px;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Dalam 3 bulan terakhir, apakah anda sudah <br> cek kesehatan anda ke fasilitas kesehatan
+                        terdekat?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi6" id="tidak6" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi6" id="jarang6" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi6" id="sering6" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-6">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-7" id="soal-7" style="background-color: #fbfbfb;">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/timbangan.gif" style="width: 115%; padding-top: 75px;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering mengecek <br> berat badan anda secara teratur?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi7" id="tidak7" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi7" id="jarang7" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi7" id="sering7" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-7">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-8" id="soal-8">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/kolesterol.gif"
+                    style="width: 85%;padding-top: 250px; padding-left: 150px;" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda mengetahui kadar kolesterol <br> dan gula anda saat ini?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi8" id="tidak8" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi8" id="jarang8" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi8" id="sering8" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-8">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-9" id="soal-9">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/gagdet.gif" style="width: 80%; padding-top: 200px;padding-left: 100px;"
+                    alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering menggunakan <br> gadget diatas 7 jam dalam sehari?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi9" id="tidak9" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi9" id="jarang9" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi9" id="sering9" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn lanjut" href="#soal-9">Lanjut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="the-container soal-10" id="soal-10">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/jemur.gif" style="width: 100%;padding-left: 200px;padding-top: 200px;"
+                    alt="" />
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="form-soal">
+                    <h2>Apakah anda sering berjemur di pagi hari?</h2>
+                    <br>
+                    <label class="container">Tidak Pernah
+                        <input type="radio" name="opsi10" id="tidak10" value="tidak">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Jarang
+                        <input type="radio" name="opsi10" id="jarang10" value="jarang">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sering
+                        <input type="radio" name="opsi10" id="sering10" value="sering">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div>
+                        <a class="btn" id="kirim" href="">Kirim</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="saran-container" style="display: none">
+        <h1>HASIL DIAGNOSA</h1>
+        <div id="data"></div>
+        <!-- <h2>Nama</h2>
+        <h2>70% - Sehat</h2>
+        <h2>BMI: 39 - Gemuk</h2> -->
+        <!-- <ul id="daftar-saran">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae unde in earum et labore eius fuga
+                inventore id nulla?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae unde in earum et labore eius fuga
+                inventore id nulla?</li>
+        </ul> -->
+
+        <table id="daftar-saran" border="2">
+            <!-- <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, porro?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, porro?</td>
+            </tr> -->
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+
+    - Bikin CSS (Nourma, Fauzan)
+    - Bikin soal (Andi)
+    - Bikin DOM (Mencius)
+
+ -->
